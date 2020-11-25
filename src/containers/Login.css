@@ -1,0 +1,31 @@
+.login {
+    min-height: 100vh;
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #e11f1d;
+}
+
+.login-form {
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.username > input,
+.password > input{
+    height: auto;
+    max-width: 100%;
+    font-size: 1.6rem;
+    width: 100%;
+    flex: 1;
+    border-radius: 3rem;
+    border: 1px solid #e0e0e0;
+    padding: 0.7rem 1.5rem;
+    transition: all 0.3s ease;
+}
