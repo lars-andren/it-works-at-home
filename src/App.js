@@ -10,6 +10,7 @@ export const App = () => (
             src="https://www.defa.com/content/themes/defa/dist/images/defa-logo.svg"
             width="112"
             height="28"
+            alt="Defa logoytype"
           />
         </a>
       </div>
