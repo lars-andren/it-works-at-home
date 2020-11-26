@@ -4,6 +4,12 @@ import Button from "react-bootstrap/Button";
 import "./InputItems.css";
 import { useHistory } from "react-router-dom";
 
+export function encode(data: any) {
+    return Object.keys(data)
+      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  }
+
 export default function InputItems() {
   const history = useHistory();
   const [formState, setFormState] = useState({
