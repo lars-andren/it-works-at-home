@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes } from "./Routes";
 
-export default () => (
+export const App = () => (
   <div>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">

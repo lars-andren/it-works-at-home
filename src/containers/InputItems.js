@@ -18,6 +18,16 @@ export default function InputItems() {
   function handleSubmit(event) {
     event.preventDefault();
 
+    fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "number-of-submissions",
+          "text-to-send": `${Math.random() + "message"}`,
+          ...formState
+        }),
+      });
+
     history.push("thank-you");
   }
 
