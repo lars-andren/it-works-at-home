@@ -90,15 +90,72 @@ export default function InputItems() {
             </div>
           </Form.Group>
 
+          <Form.Group size="lg" controlId="role" className="field">
+            <Form.Label className="label">Select your working environment (check all that apply):</Form.Label>
+            <div className="control">
+              <label className="checkbox">
+                <input
+                    name="role"
+                    type="checkbox"
+                    value="Outdoors"
+                />{" "}
+                Outdoors
+              </label>
+            </div>
+            <div className="control">
+              <label className="checkbox">
+                <input
+                    name="role"
+                    type="checkbox"
+                    value="Office"
+                />{" "}
+                Office
+              </label>
+            </div>
+            <div className="control">
+              <label className="checkbox">
+                <input
+                    name="role"
+                    type="checkbox"
+                    value="Home"
+                />{" "}
+                Home office
+              </label>
+            </div>
+          </Form.Group>
+
           <Form.Group size="lg" controlId="comment" className="field">
-            <Form.Label className="label">Have you ever experienced physical discomfort caused by your work environment?</Form.Label>
-            <Form.Control
-                autoFocus
-                type="text"
-                name="comment"
-                value={comment}
-                onChange={onValueChange}
-            />
+            <Form.Label className="label">Have you during 2020 experienced physical discomfort caused by your work environment?</Form.Label>
+              <div className="control">
+                <label className="radio">
+                  <input
+                      name="yes"
+                      type="radio"
+                      value="yes"
+                  />{" "}
+                  Yes
+                </label>
+              </div>
+              <div className="control">
+                <label className="radio">
+                  <input
+                      name="no"
+                      type="radio"
+                      value="No"
+                  />{" "}
+                  No
+                </label>
+              </div>
+              <div className="control">
+                <label className="radio">
+                  <input
+                      name="unsure"
+                      type="radio"
+                      value="Unsure"
+                  />{" "}
+                  Not sure
+                </label>
+              </div>
           </Form.Group>
 
           <Form.Group size="lg" controlId="comment" className="field">
