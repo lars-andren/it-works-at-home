@@ -91,6 +91,17 @@ export default function InputItems() {
           </Form.Group>
 
           <Form.Group size="lg" controlId="comment" className="field">
+            <Form.Label className="label">Have you ever experienced physical discomfort caused by your work environment?</Form.Label>
+            <Form.Control
+                autoFocus
+                type="text"
+                name="comment"
+                value={comment}
+                onChange={onValueChange}
+            />
+          </Form.Group>
+
+          <Form.Group size="lg" controlId="comment" className="field">
             <Form.Label className="label">Additional comment</Form.Label>
             <Form.Control
               autoFocus
