@@ -32,7 +32,7 @@ export default function Login() {
             <Form.Control
               className="input"
               autoFocus
-              value={email}
+              value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
           </Form.Group>

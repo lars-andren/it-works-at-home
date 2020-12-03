@@ -3,7 +3,7 @@ import { Routes } from "./Routes";
 
 export const App = () => (
   <div>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation" style={{justifyContent: "space-between", paddingRight: 20}}>
       <div class="navbar-brand">
         <a class="navbar-item" href="https://defa.com">
           <img
@@ -13,7 +13,18 @@ export const App = () => (
             alt="Defa logoytype"
           />
         </a>
+
       </div>
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://defa.com">
+          <img
+            src="it-works-at-home-logo.png"
+            width="140"
+            height="60"
+            alt="IT works @ home logoytype"
+          />
+        </a>
+        </div>
     </nav>
     <Routes />
   </div>
