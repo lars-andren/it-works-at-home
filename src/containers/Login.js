@@ -7,11 +7,11 @@ import { useHistory } from "react-router-dom";
 export default function Login() {
   const history = useHistory();
 
-  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   function validateForm() {
-    return email.length > 0 && password.length > 0;
+    return username.length > 0 && password.length > 0;
   }
 
   function handleSubmit(event) {
@@ -27,13 +27,13 @@ export default function Login() {
       </p>
       <div className="container Login">
         <Form onSubmit={handleSubmit}>
-          <Form.Group size="lg" controlId="email" className="field">
-            <Form.Label className="label">Email</Form.Label>
+          <Form.Group size="lg" controlId="username" className="field">
+            <Form.Label className="label">Username</Form.Label>
             <Form.Control
               className="input"
               autoFocus
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setUsername(e.target.value)}
             />
           </Form.Group>
           <Form.Group size="lg" controlId="password" className="field">
