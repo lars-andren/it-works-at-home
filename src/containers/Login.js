@@ -21,10 +21,12 @@ export default function Login() {
 
   return (
     <section className="section">
-      <h1 className="title">IT Works @ Home</h1>
-      <p className="subtitle">
-        IT Works @ Home in collaboration with <strong>Defa</strong>!
-      </p>
+      <div className="container top-container">
+        <h1 className="title">IT Works @ Home</h1>
+        <p className="subtitle">
+          in collaboration with <strong>Defa</strong>!
+        </p>
+      </div>
       <div className="container Login">
         <Form onSubmit={handleSubmit}>
           <Form.Group size="lg" controlId="username" className="field">

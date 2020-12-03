@@ -29,3 +29,9 @@
     padding: 0.7rem 1.5rem;
     transition: all 0.3s ease;
 }
+
+
+.top-container {
+    max-width:  320px !important; 
+    margin-bottom: 20px;
+}
