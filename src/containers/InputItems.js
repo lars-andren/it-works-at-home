@@ -50,7 +50,7 @@ export default function InputItems() {
     <div className="container InputItems">
       <div className="section">
         <h1 className="title">Please answer the following questions.</h1>
-        <p className="subtitle">All responses are anonymous.</p>
+        <p className="subtitle">All responses are encrypted and stored securely to prevent unauthorized access.</p>
         <Form onSubmit={handleSubmit}>
           <Form.Group size="lg" controlId="country" className="field">
             <Form.Label className="label">Select your country:</Form.Label>
@@ -77,6 +77,18 @@ export default function InputItems() {
                 />{" "}
                   Sweden
                 </label>
+            </div>
+            <div className="control">
+              <label className="radio">
+                <input
+                    name="country"
+                    type="radio"
+                    value="Finland"
+                    checked={country === "Finland"}
+                    onChange={onValueChange}
+                />{" "}
+                Finland
+              </label>
             </div>
             <div className="control">
               <label className="radio">
@@ -126,8 +138,88 @@ export default function InputItems() {
             </div>
           </Form.Group>
 
+          <Form.Group size="lg" controlId="pain" className="field">
+            <Form.Label className="label">Have you experienced any physical discomfort (aches, irritated joints etc) due to changes in your work environment?</Form.Label>
+            <div className="control">
+              <label className="radio">
+                <input
+                    name="pain"
+                    type="radio"
+                    value="Yes"
+                    checked={pain === "Yes"}
+                    onChange={onValueChange}
+                />{" "}
+                Yes
+              </label>
+            </div>
+            <div className="control">
+              <label className="radio">
+                <input
+                    name="pain"
+                    type="radio"
+                    value="No"
+                    checked={pain === "No"}
+                    onChange={onValueChange}
+                />{" "}
+                No
+              </label>
+            </div>
+            <div className="control">
+              <label className="radio">
+                <input
+                    name="pain"
+                    type="radio"
+                    value="Unsure"
+                    checked={country === "Unsure"}
+                    onChange={onValueChange}
+                />{" "}
+                Not sure
+              </label>
+            </div>
+          </Form.Group>
+
+          <Form.Group size="lg" controlId="mental" className="field">
+            <Form.Label className="label">Have you experienced social problems (irritated spouse, feelings of unhappiness etc) due to changes in your work environment?</Form.Label>
+            <div className="control">
+              <label className="radio">
+                <input
+                    name="mental"
+                    type="radio"
+                    value="Yes"
+                    checked={pain === "Yes"}
+                    onChange={onValueChange}
+                />{" "}
+                Yes
+              </label>
+            </div>
+            <div className="control">
+              <label className="radio">
+                <input
+                    name="mental"
+                    type="radio"
+                    value="No"
+                    checked={pain === "No"}
+                    onChange={onValueChange}
+                />{" "}
+                No
+              </label>
+            </div>
+            <div className="control">
+              <label className="radio">
+                <input
+                    name="mental"
+                    type="radio"
+                    value="Unsure"
+                    checked={country === "Unsure"}
+                    onChange={onValueChange}
+                />{" "}
+                Not sure
+              </label>
+            </div>
+          </Form.Group>
+
           <Form.Group size="lg" controlId="comment" className="field">
-            <Form.Label className="label">Is your home office lacking any vital tools or equipment?</Form.Label>
+            <Form.Label className="label">Is your office (home or regular) lacking any vital tools or equipment?</Form.Label>
             <div className="control">
               <label className="radio">
                 <input
@@ -161,7 +253,7 @@ export default function InputItems() {
           </Form.Group>
 
           <Form.Group size="lg" controlId="tools" className="field">
-            <Form.Label className="label">What do you miss in your home office (check all that apply):</Form.Label>
+            <Form.Label className="label">What do you miss in your office (home or other, check all that apply):</Form.Label>
             <div className="control">
               <label className="checkbox">
                 <input
