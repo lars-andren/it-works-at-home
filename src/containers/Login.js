@@ -24,7 +24,7 @@ export default function Login() {
       <div className="container top-container">
         <h1 className="title">IT Works @ Home</h1>
         <p className="subtitle">
-          in collaboration with <strong>Defa</strong>!
+          in collaboration with <strong>DEFA</strong>
         </p>
       </div>
       <div className="container Login">
