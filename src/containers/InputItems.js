@@ -13,7 +13,6 @@ export function encode(data: any) {
 export default function InputItems() {
   const history = useHistory();
   const [formState, setFormState] = useState({
-    country: "Norway",
     comment: "",
   });
 
@@ -237,7 +236,6 @@ export default function InputItems() {
           <Form.Group size="lg" controlId="comment" className="field">
             <Form.Label className="label">Additional comment</Form.Label>
             <Form.Control
-              autoFocus
               type="text"
               name="comment"
               value={comment}
