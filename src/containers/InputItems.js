@@ -40,7 +40,7 @@ export default function InputItems() {
     setFormState((prev) => ({ ...prev, [name]: value }));
   }
 
-  const { comment, country, tools } = formState;
+  const { comment, country, pain, mental, tools } = formState;
 
   function validateForm() {
     return country && tools;
@@ -170,7 +170,7 @@ export default function InputItems() {
                     name="pain"
                     type="radio"
                     value="Unsure"
-                    checked={country === "Unsure"}
+                    checked={pain === "Unsure"}
                     onChange={onValueChange}
                 />{" "}
                 Not sure
@@ -186,7 +186,7 @@ export default function InputItems() {
                     name="mental"
                     type="radio"
                     value="Yes"
-                    checked={pain === "Yes"}
+                    checked={mental === "Yes"}
                     onChange={onValueChange}
                 />{" "}
                 Yes
@@ -198,7 +198,7 @@ export default function InputItems() {
                     name="mental"
                     type="radio"
                     value="No"
-                    checked={pain === "No"}
+                    checked={mental === "No"}
                     onChange={onValueChange}
                 />{" "}
                 No
@@ -210,7 +210,7 @@ export default function InputItems() {
                     name="mental"
                     type="radio"
                     value="Unsure"
-                    checked={country === "Unsure"}
+                    checked={mental === "Unsure"}
                     onChange={onValueChange}
                 />{" "}
                 Not sure
