@@ -49,8 +49,7 @@ export default function InputItems() {
   return (
     <div className="container InputItems">
       <div className="section">
-        <h1 className="title">Please answer the following questions.</h1>
-        <p className="subtitle">All responses are encrypted and stored securely to prevent unauthorized access.</p>
+        <h1 className="title">All responses are encrypted and stored securely to prevent unauthorized access.</h1>
         <Form onSubmit={handleSubmit}>
           <Form.Group size="lg" controlId="country" className="field">
             <Form.Label className="label">Select your country:</Form.Label>
