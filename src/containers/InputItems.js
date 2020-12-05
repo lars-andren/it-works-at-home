@@ -49,7 +49,7 @@ export default function InputItems() {
   return (
     <div className="container InputItems">
       <div className="section">
-        <h1 className="title">All responses are encrypted and stored securely to prevent unauthorized access.</h1>
+        <h1 className="subtitle">All responses are encrypted and stored securely to prevent unauthorized access.</h1>
         <Form onSubmit={handleSubmit}>
           <Form.Group size="lg" controlId="country" className="field">
             <Form.Label className="label">Select your country:</Form.Label>
@@ -252,7 +252,7 @@ export default function InputItems() {
           </Form.Group>
 
           <Form.Group size="lg" controlId="tools" className="field">
-            <Form.Label className="label">What do you miss in your office (home or other, check all that apply):</Form.Label>
+            <Form.Label className="label">What do you miss in your office (home or regular, check all that apply):</Form.Label>
             <div className="control">
               <label className="checkbox">
                 <input
