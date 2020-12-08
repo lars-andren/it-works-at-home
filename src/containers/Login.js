@@ -4,6 +4,12 @@ import Button from "react-bootstrap/Button";
 import "./Login.css";
 import { useHistory } from "react-router-dom";
 
+export function encode(data: any) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default function Login() {
   const history = useHistory();
 
@@ -16,6 +22,16 @@ export default function Login() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": "number-of-submissions",
+        "text-to-send": `${Math.random() + "message"}`
+      }),
+    });
+
     history.push("/form");
   }
 
